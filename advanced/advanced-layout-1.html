@@ -7,25 +7,52 @@
     <link rel="stylesheet" href="../style.css">
     <style>
       /* Doe hier jouw ding! */
+      body{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: masonry;
+        gap: 30px;
+      }
+      
+      footer, .black{
+        height: 40vh;
+        grid-column: 4;
+      }
+      header, .cyan{
+        height: 30vh;
+        grid-column: 1;
+      }
+
+      .magenta, nav{
+        height: 20vh;
+        grid-column: 2;
+      }
+
+      .yellow{
+        height: 10vh;
+        grid-column: 3;
+      }
+
+
     </style>
   </head>
   <body id="advanced-layout-1">
 
     <header><h1>Advanced Layout 1</h1></header>
-
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
 
-    <!-- Kopieer en mix zoveel als je nodig hebt -->
+    <section class="magenta">2</section>
+    <section class="yellow">3</section>
+    <section class="black">4</section>
     <section class="yellow"></section>
-    <section class="black"></section>
     <section class="cyan"></section>
+    <section class="cyan"></section>
+    <section class="black"></section>
     <section class="magenta"></section>
     <section class="yellow"></section>
     <section class="black"></section>
-    <section class="cyan"></section>
     <section class="magenta"></section>
     <section class="yellow"></section>
-
     <footer></footer>
 
   </body>
