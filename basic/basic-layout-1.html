@@ -8,7 +8,24 @@
     <style>
       body {
         display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        gap: 10px;
       }
+      header{
+        grid-column: 1 / 3;
+      }
+      nav{
+       grid-column: 1 / 2;
+      }
+      main{
+       grid-column: 2 / 3;
+      }
+
+      footer{
+        grid-column: 1 / 3;
+      }
+
       /* Doe hier jouw ding! */
     </style>
   </head>
